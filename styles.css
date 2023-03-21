@@ -11,7 +11,6 @@
     --primary-color: #ff7613;
     --text-color: #d0cdcd;
     --clr-dark: #081b3b;
-    --clr-base-dark: 180, 55%, 20%; /*color for nav */
 }
 html {
     font-size: 10px;
@@ -75,7 +74,7 @@ ul, ol, li {
 /* layouts */
 .containers {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     padding: 5rem;
@@ -87,8 +86,8 @@ ul, ol, li {
     .containers {
         width: 100%;
         grid-template-columns: 1fr;
-        padding: 3rem;
-        gap: 7rem;
+        padding-top: 4rem;
+        gap: 1rem;
     }
 }
 .profile {
@@ -118,16 +117,18 @@ ul, ol, li {
     }
     .group-3 {
         flex-direction: column;
+        gap: 1rem;
     }
 }
 /* profile */
 .profile_container {
     margin-top: 20px;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 .profile_profileImg {
     max-width: 250px;
+    margin-right: 2rem;
 }
 .profile_name_firstName {
     color: white;
@@ -166,6 +167,7 @@ ul, ol, li {
 /*** skills ***/
 .skills {
     margin-top: 1rem;
+    margin-left: 10rem;
 }
 .skills > .title {
     margin-left: 1rem;
@@ -247,6 +249,12 @@ hr {
     border: none;
     border-top: 2px solid rgba(128, 128, 128, 0.229);
 }
+@media only screen and (max-width:900px) {
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
 @media only screen and (max-width:768px) {
     hr {
         margin: 0 auto;
@@ -278,9 +286,6 @@ hr {
     --clr-light: 0, 0%, 70%;
 
     --clr-accent-light: 0, 65%, 60%;
-
-    /** Border radius */
-    --br-btn: 0.75rem;
 }
 /* A11Y - Remove all animations, transitions and smooth scroll for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
@@ -320,9 +325,6 @@ p {
 }
 a, label, input, textarea {
     font-size: clamp(1rem, 0.6rem + 0.5vw, 1.4rem);
-}
-.btn {
-    font-size: 100%;
 }
 .container {
     width: min(100%, 1800px);
@@ -415,36 +417,6 @@ a:focus {
     }
 }
 .link-external:active {
-    transform: scale(0.98);
-    filter: brightness(90%);
-    outline: 0;
-}
-/********* BUTTONS *********/
-
-.btn {
-    padding: 0.5em 1em;
-    border-radius: var(--br-btn);
-    overflow: hidden;
-    cursor: pointer;
-    border: none;
-    width: min(75%, 20ch);
-    transform: scale(1);
-    transition: transform 200ms ease;
-}
-/* Button states */
-.btn:focus {
-    transform: scale(1.05);
-    filter: brightness(120%) saturate(130%);
-    outline: 2px solid hsl(var(--clr-light));
-    outline-offset: 2px;
-}
-@media screen and (hover) {
-    .btn:hover {
-        transform: scale(1.05);
-        filter: brightness(120%) saturate(130%);
-    }
-}
-.btn:active {
     transform: scale(0.98);
     filter: brightness(90%);
     outline: 0;
@@ -657,20 +629,20 @@ input, textarea {
 .card {
     display: flex;
     align-items: center;
+    text-align: center;
     width: 75vw;
-    max-width: 50rem;
-    padding: 50px 30px 50px 20px;
+    max-width: 49rem;
+    padding: 2rem 1rem 3rem 1rem;
     background: #d0cdcd;
     border-radius: 3rem;
 }
 
 .card img {
-    max-width: 280px;
-    width: 28vw;
-    height: 300px;
+    max-width: 30rem;
     object-fit: cover;
     border-radius: inherit;
     box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+    margin-bottom: 1rem;
 }
 
 .card h3 {
@@ -683,58 +655,63 @@ input, textarea {
 
 .card button {
     border: 0;
-    background: blue;
-    color: #081b3b;
+    background: var(--clr-dark);
+    color: var(--primary-color);
     font-family: inherit;
     padding: 16px 26px;
     font-size: 16px;
     border-radius: 40px;
+}
+.card button:hover {
+    border: 0;
+    background: var(--primary-color);
+    color: var(--text-color);
 }
 @media (width <= 1200px) {
     .card {
         flex-direction: column;
         text-align: center;
         margin: 0 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
         width: 100%;
     }
 
     .card img {
-        margin: -50px 0 10px 0;
+        margin: 3rem 0 10px 0;
         width: 100%;
-        max-width: 800px;
+        max-width: 20rem;
     }
 }
 @media (width <= 900px) {
     .card {
         flex-direction: column;
         text-align: center;
-        margin: 10px 20px;
-        padding-left: 0;
-        padding-right: 50;
+        margin: 0.67rem 1.25rem;
+        padding: 1rem;
         width: 100%;
     }
 
     .card img {
-        margin: -100px 0 30px 0;
+        margin: 2rem 0 1rem 0;
         width: 100%;
-        max-width: 900px;
+        max-width: 18rem;
     }
 }
 @media (width <= 740px) {
     .card {
         flex-direction: column;
         text-align: center;
-        margin: 0 40px;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         width: 100%;
     }
 
     .card img {
-        margin: -100px 0 30px 0;
+        margin: -5rem 0 1rem 0;
         width: 100%;
-        max-width: 900px;
+        max-width: 17rem;
     }
 }
