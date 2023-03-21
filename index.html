@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
     <div class="container__nav-toggle">
         <button id="nav-toggle" aria-controls="header">
@@ -36,12 +38,11 @@
             </nav>
         </div>
     </header>
-    <section></section>
-    <div class="containers">
+    <div class="containers" id="about">
         <div class="profile">
             <div class="profile_container">
                 <div class="profile_profileImg">
-                    <img src="./images/profileImage1.png" alt="Aleksandr Khamitov">
+                    <img src="./images/profileImage1.png" alt="Aleksandr Khamitov" title="Aleksandr Khamitov">
                 </div>
                 <div>
                     <h1 class="profile_name">
@@ -52,7 +53,8 @@
                     <p class="description">
                         Hello everyone, I am Aleksandr and I am looking for a job.
                     </p>
-                    <a class="downloadBtn" href="CV.pdf" download="Resume.pdf">Download CV</a>
+                    <a class="downloadBtn" href="CV.pdf" download="Resume.pdf" title="Download CV after click">Download
+                        CV</a>
                 </div>
                 <div class="skills">
                     <h3 class="title">Skills (Expertise)</h3>
@@ -64,6 +66,44 @@
                         <li>Git & GitHub</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <hr id="projects">
+        <div class="card">
+            <img src="" alt="">
+            <div>
+                <h2 class="h2">Invest in ...</h2>
+                <h3 class="h3">Type: Resi...</h3>
+                <p>Soon you can</p>
+                <button>Show the</button>
+                <button>Show the</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <div>
+                <h2 class="h2">Invest in ...</h2>
+                <h3 class="h3">Type: Resi...</h3>
+                <p>Soon you can</p>
+                <button>Show the</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <div>
+                <h2 class="h2">Invest in ...</h2>
+                <h3 class="h3">Type: Resi...</h3>
+                <p>Soon you can</p>
+                <button>Show the</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="" alt="">
+            <div>
+                <h2 class="h2">Invest in ...</h2>
+                <h3 class="h3">Type: Resi...</h3>
+                <p>Soon you can</p>
+                <button>Show the</button>
             </div>
         </div>
         <hr id="CV">
@@ -197,7 +237,7 @@
                     </p>
                 </div>
                 <div class="contactme_contactmeImg">
-                    <img src="./images/profileImage2.png" alt="Aleksandr Khamitov">
+                    <img src="./images/profileImage2.png" alt="Aleksandr Khamitov" title="Aleksandr Khamitov">
                 </div>
             </div>
             <form class="contactmeform" action="mailto:khamitov.aleksandr@gmail.com" method="post" enctype="text/plain">
@@ -206,8 +246,9 @@
                 <label for="email" class="contactme_title">Your Email:</label><br>
                 <input type="email" name="yourEmail" value="" id="email"><br>
                 <label for="comment" class="contactme_title">Your Message:</label><br>
-                <textarea name="yourMessage" id="" cols="30" rows="10" id="comment"></textarea><br>
-                <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Submit</a><br>
+                <textarea name="yourMessage" id="" cols="30" rows="10" id="comment" spellcheck="true"></textarea><br>
+                <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button"
+                    aria-pressed="true">Submit</a><br>
             </form>
         </div>
         <div class="group-3">
@@ -223,15 +264,15 @@
             <div class="socials">
                 <h3 class="title">Socials</h3>
                 <div class="social_items">
-                    <a href="www.github.com/khamitov-aleksandr" class="social_item">
+                    <a href="https://github.com/khamitov-aleksandr" target="_blank" class="social_item">
                         <i data-feather="github"></i>
                         <span>/khamitov-aleksandr</span>
                     </a>
-                    <a href="www.linkedin.com/aleksandrkhamitov" class="social_item">
+                    <a href="https://www.linkedin.com/in/aleksandrkhamitov/" target="_blank" class="social_item">
                         <i data-feather="linkedin"></i>
                         <span>/aleksandrkhamitov</span>
                     </a>
-                    <a href="www.instagram.com/alexkhamitov" class="social_item">
+                    <a href="https://www.instagram.com/alexkhamitov" target="_blank" class="social_item">
                         <i data-feather="instagram"></i>
                         <span>/alexkhamitov</span>
                     </a>
@@ -247,4 +288,5 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>
