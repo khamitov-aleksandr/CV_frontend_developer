@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 <body>
     <div class="container__nav-toggle">
         <button id="nav-toggle" aria-controls="header">
@@ -36,7 +38,7 @@
             </nav>
         </div>
     </header>
-    <div class="containers" id="about">
+    <section class="containers" id="about">
         <div class="profile">
             <div class="profile_container">
                 <div class="profile_profileImg">
@@ -51,11 +53,69 @@
                     <p class="description">
                         Hello everyone, I am Aleksandr and I am looking for a job.
                     </p>
-                    <a class="downloadBtn" href="CV.pdf" download="Resume.pdf" title="Download CV after click">Download
-                        CV</a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="projects">
+        <span class="project_title">PROJECTS</span>
+        <div class="cards">
+            <div class="card">
+                <img src="images/littlelemon.png" alt="Little Lemon Restaurant">
+                <div>
+                    <h2 class="h2">Little Lemon restaurant</h2>
+                    <h3 class="h3">React.js, HTML, CSS, JS</h3>
+                    <p>This is a responsive React webpage for the "Little Lemon restaurant". You can see menu, write a
+                        feedback, login, book a table and read more about restaurant. Also here is wireframes from Figma
+                        to see how was UI/UX design planned.</p>
+                    <button href="https://khamitov-aleksandr.github.io/littlelemon/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
+                    <button href="https://github.com/khamitov-aleksandr/littlelemon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit
+                        GiHub</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/btngame.png" alt="Buttons game">
+                <div>
+                    <h2 class="h2">Stroop Effect Game</h2>
+                    <h3 class="h3">HTML, CSS, JS</h3>
+                    <p>This is a responsive React webpage for the "Little Lemon restaurant". You can see menu, write a
+                        feedback, login, book a table and read more about restaurant. Also here is wireframes from Figma
+                        to see how was UI/UX design planned.</p>
+                    <button href="https://khamitov-aleksandr.github.io/btngame/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
+                    <button href="https://github.com/khamitov-aleksandr/btngame" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit
+                        GiHub</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/drumkit.png" alt="Drum Kit">
+                <div>
+                    <h2 class="h2">Drum Kit</h2>
+                    <h3 class="h3">HTML, CSS, JS</h3>
+                    <p>This is a website about musical instruments and sounds. Just try it and enjoy!</p>
+                    <button href="https://khamitov-aleksandr.github.io/drum/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
+                    <button href="https://github.com/khamitov-aleksandr/drum" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit
+                        GiHub</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/dice.png" alt="The Dice Game">
+                <div>
+                    <h2 class="h2">The Dice Game</h2>
+                    <h3 class="h3">HTML, CSS, JS</h3>
+                    <p>This is a simple Dice Game. Are you gambling?</p>
+                    <button href="https://khamitov-aleksandr.github.io/dice/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
+                    <button href="https://github.com/khamitov-aleksandr/dice" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit
+                        GiHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume" id="CV">
+        <span class="project_title">CV</span>
+        <div class="containers">
+            <div class="group-1">
                 <div class="skills">
-                    <h3 class="title">Skills (Expertise)</h3>
+                    <h3 class="title">Skills</h3>
                     <ul class="skill_list description">
                         <li>React JS</li>
                         <li>JavaScript</li>
@@ -64,193 +124,143 @@
                         <li>Git & GitHub</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <hr id="projects">
-        <div class="card">
-            <img src="images/littlelemon.png" alt="Little Lemon Restaurant">
-            <div>
-                <h2 class="h2">Little Lemon restaurant</h2>
-                <h3 class="h3">React.js, HTML, CSS, JS</h3>
-                <p>This is a responsive React webpage for the "Little Lemon restaurant". You can see menu, write a feedback, login, book a table and read more about restaurant. Also here is wireframes from Figma to see how was UI/UX design planned.</p>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit GiHub</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/btngame.png" alt="Buttons game">
-            <div>
-                <h2 class="h2">Stroop Effect Game</h2>
-                <h3 class="h3">HTML, CSS, JS</h3>
-                <p>This is a responsive React webpage for the "Little Lemon restaurant". You can see menu, write a feedback, login, book a table and read more about restaurant. Also here is wireframes from Figma to see how was UI/UX design planned.</p>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit GiHub</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/drumkit.png" alt="Drum Kit">
-            <div>
-                <h2 class="h2">Drum Kit</h2>
-                <h3 class="h3">HTML, CSS, JS</h3>
-                <p>This is a website about musical instruments and sounds. Just try it and enjoy!</p>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit GiHub</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/dice.png" alt="The Dice Game">
-            <div>
-                <h2 class="h2">The Dice Game</h2>
-                <h3 class="h3">HTML, CSS, JS</h3>
-                <p>This is a simple Dice Game. Are you gambling?</p>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit Webpage">View</button>
-                <button data-bs-toggle="tooltip" data-bs-placement="bottom" title="Visit GiHub Repo">Visit GiHub</button>
-            </div>
-        </div>
-        <hr id="CV">
-        <div class="group-1">
-            <div class="languages">
-                <h3 class="title">Languages</h3>
-                <div class="languages_item">
-                    <h4 class="languages_name">Russian</h4>
-                    <p class="description">Native language</p>
+                <div class="languages">
+                    <h3 class="title">Languages</h3>
+                    <div class="languages_item">
+                        <h4 class="languages_name">Russian</h4>
+                        <p class="description">Native language</p>
+                    </div>
+                    <div class="languages_item">
+                        <h4 class="languages_name">English</h4>
+                        <p class="description">Daily language</p>
+                    </div>
+                    <div class="languages_item">
+                        <h4 class="languages_name">Turkish</h4>
+                        <p class="description">Beginner level</p>
+                    </div>
+                    <div class="languages_item">
+                        <h4 class="languages_name">Dutch</h4>
+                        <p class="description">Start to learn</p>
+                    </div>
                 </div>
-                <div class="languages_item">
-                    <h4 class="languages_name">English</h4>
-                    <p class="description">Daily language</p>
+                <div class="education">
+                    <h3 class="title">Education</h3>
+                    <div class="education_item">
+                        <p class="item_preTitle">
+                            2015-2017
+                        </p>
+                        <h4 class="item_title">M.S. Instrumentation</h4>
+                        <p class="item_subtitle">
+                            Ryazan State Radio Engineering University
+                        </p>
+                    </div>
+                    <div class="education_item">
+                        <p class="item_preTitle">
+                            2011-2015
+                        </p>
+                        <h4 class="item_title">B.S. Instrumentation</h4>
+                        <p class="item_subtitle">
+                            Ryazan State Radio Engineering University
+                        </p>
+                    </div>
                 </div>
-                <div class="languages_item">
-                    <h4 class="languages_name">Turkish</h4>
-                    <p class="description">Beginner level</p>
-                </div>
-                <div class="languages_item">
-                    <h4 class="languages_name">Dutch</h4>
-                    <p class="description">Start to learn</p>
+                <div class="certification">
+                    <h3 class="title">Certifications</h3>
+                    <div class="certification_item">
+                        <p class="item_preTitle">2023</p>
+                        <h4 class="item_title">Web Development</h4>
+                        <p class="description">Udemy cours: The Complite 2023 Web Development Bootcamp with Dr. Angela
+                            Yu
+                        </p>
+                    </div>
+                    <div class="certification_item">
+                        <p class="item_preTitle">2023</p>
+                        <h4 class="item_title">Front-End Developer</h4>
+                        <p class="description">Coursera: Meta Front-End Developer Professional Certificate</p>
+                    </div>
+                    <div class="certification_item">
+                        <p class="item_preTitle">2022</p>
+                        <h4 class="item_title">Web Development</h4>
+                        <p class="description">ITMO University Web Development certification</p>
+                    </div>
                 </div>
             </div>
-            <div class="education">
-                <h3 class="title">Education</h3>
-                <div class="education_item">
-                    <p class="item_preTitle">
-                        2015-2017
-                    </p>
-                    <h4 class="item_title">M.S. Instrumentation</h4>
-                    <p class="item_subtitle">
-                        Ryazan State Radio Engineering University
-                    </p>
+            <div class="group-2">
+                <div class="expirience">
+                    <h3 class="title">Expirience</h3>
+                    <div class="expirience_item">
+                        <p class="item_preTitle">2017 - 2023</p>
+                        <h4 class="item_title">RPTP Granit (Ryazan, RU - Ankara, TR)</h4>
+                        <p class="item_subtitle">Instrumentation and QA/QC electronic engineer</p>
+                        <p class="description">
+                            - Managed and supervised the work team.
+                            - Collaborated and communicated with foreign experts.
+                            - Provided technical support to 20+ users while ensuring proper maintenance of workstations
+                            and
+                            servers.
+                        </p>
+                    </div>
                 </div>
-                <div class="education_item">
-                    <p class="item_preTitle">
-                        2011-2015
-                    </p>
-                    <h4 class="item_title">B.S. Instrumentation</h4>
-                    <p class="item_subtitle">
-                        Ryazan State Radio Engineering University
-                    </p>
-                </div>
-            </div>
-            <div class="certification">
-                <h3 class="title">Certifications</h3>
-                <div class="certification_item">
-                    <p class="item_preTitle">2023</p>
-                    <h4 class="item_title">Web Development</h4>
-                    <p class="description">Udemy cours: The Complite 2023 Web Development Bootcamp with Dr. Angela Yu
-                    </p>
-                </div>
-                <div class="certification_item">
-                    <p class="item_preTitle">2023</p>
-                    <h4 class="item_title">Front-End Developer</h4>
-                    <p class="description">Coursera: Meta Front-End Developer Professional Certificate</p>
-                </div>
-                <div class="certification_item">
-                    <p class="item_preTitle">2022</p>
-                    <h4 class="item_title">Web Development</h4>
-                    <p class="description">ITMO University Web Development certification</p>
-                </div>
-            </div>
-        </div>
-        <div class="group-2">
-            <div class="expirience">
-                <h3 class="title">Expirience</h3>
                 <div class="expirience_item">
-                    <p class="item_preTitle">2017 - 2023</p>
-                    <h4 class="item_title">RPTP Granit (Ryazan, RU - Ankara, TR)</h4>
-                    <p class="item_subtitle">Instrumentation and QA/QC electronic engineer</p>
+                    <p class="item_preTitle">2015 - 2017</p>
+                    <h4 class="item_title">Nika and Co, Ltd., Project Institute (Ryazan, RU)</h4>
+                    <p class="item_subtitle">Design engineer</p>
                     <p class="description">
-                        - Managed and supervised the work team.
-                        - Collaborated and communicated with foreign experts.
-                        - Provided technical support to 20+ users while ensuring proper maintenance of workstations and
-                        servers.
+                        - Designed residential buildings and non-residential premises with fire extinguishing systems,
+                        intercom, video surveillance, radio communication lines, building telephony lines.
+                        - Coordinated the equipment and their placement, as well as the parameters of the server room
+                        with the departments of other engineering networks and architects.
+                        - Used various programs for working with graphic objects.
+                        - Сonstructed communication lines to provide control over elevator shafts.
                     </p>
                 </div>
+                <div class="hobby">
+                    <h3 class="title">
+                        Interests
+                    </h3>
+                    <div class="hobby_items">
+                        <div class="hobby_item">
+                            <i data-feather="book"></i>
+                            <span>Books</span>
+                        </div>
+                        <div class="hobby_item">
+                            <i data-feather="map"></i>
+                            <span>Traveling</span>
+                        </div>
+                        <div class="hobby_item">
+                            <i data-feather="music"></i>
+                            <span>Music</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="title">
+                    My CV
+                </h3>
+                <button class="superbtn" href="CV.pdf" download="Resume.pdf" title="Download CV after click">Download
+                    CV</button>
             </div>
-            <div class="expirience_item">
-                <p class="item_preTitle">2015 - 2017</p>
-                <h4 class="item_title">Nika and Co, Ltd., Project Institute (Ryazan, RU)</h4>
-                <p class="item_subtitle">Design engineer</p>
+        </div>
+    </section>
+    <section class="contactme" id="contact">
+        <div class="contactme_container">
+            <div>
+                <h1 class="contactme_name">
+                    <span class="contactme_title">Contact Me</span>
+                </h1>
                 <p class="description">
-                    - Designed residential buildings and non-residential premises with fire extinguishing systems,
-                    intercom, video surveillance, radio communication lines, building telephony lines.
-                    - Coordinated the equipment and their placement, as well as the parameters of the server room
-                    with the departments of other engineering networks and architects.
-                    - Used various programs for working with graphic objects.
-                    - Сonstructed communication lines to provide control over elevator shafts.
+                    Fill the form below 👇 and send me email.
                 </p>
             </div>
-            <div class="projects">
-                <h3 class="title">Projects</h3>
-                <div class="project_item">
-                    <p class="item_preTitle">Little Lemon Restaurant</p>
-                    <h4 class="item_title">Mail: khamitov.aleksandr@gmail.com</h4>
-                    <h4 class="item_title">GitHub: https://github.com/khamitov-aleksandr</h4>
-                    <p class="description">telephon: +310627436230</p>
-                </div>
-            </div>
-            <div class="hobby">
-                <h3 class="title">
-                    Hobby (Interests)
-                </h3>
-                <div class="hobby_items">
-                    <div class="hobby_item">
-                        <i data-feather="book"></i>
-                        <span>Books</span>
-                    </div>
-                    <div class="hobby_item">
-                        <i data-feather="map"></i>
-                        <span>Traveling</span>
-                    </div>
-                    <div class="hobby_item">
-                        <i data-feather="music"></i>
-                        <span>Music</span>
-                    </div>
-                </div>
-            </div>
         </div>
-        <hr id="contact">
-        <div class="contactme">
-            <div class="contactme_container">
-                <div>
-                    <h1 class="contactme_name">
-                        <span class="contactme_name_lastName">Contact Me</span>
-                    </h1>
-                    <p class="description">
-                        Fill the form below 👇 and send me email.
-                    </p>
-                </div>
-                <div class="contactme_contactmeImg">
-                    <img src="./images/profileImage2.png" alt="Aleksandr Khamitov" title="Aleksandr Khamitov">
-                </div>
-            </div>
-            <form class="contactmeform" action="mailto:khamitov.aleksandr@gmail.com" method="post" enctype="text/plain">
-                <label for="name" class="contactme_title">Your Name:</label><br>
-                <input type="text" name="yourName" value="" id="name"><br>
-                <label for="email" class="contactme_title">Your Email:</label><br>
-                <input type="email" name="yourEmail" value="" id="email"><br>
-                <label for="comment" class="contactme_title">Your Message:</label><br>
-                <textarea name="yourMessage" id="" cols="30" rows="10" id="comment" spellcheck="true"></textarea><br>
-                <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button"
-                    aria-pressed="true">Submit</a><br>
-            </form>
+        <form class="contactmeform" action="mailto:khamitov.aleksandr@gmail.com" method="post" enctype="text/plain">
+            <label for="name" class="contactme_label">Your Name:</label><br>
+            <input type="text" name="yourName" value="" id="name" autocomplete="off"><br>
+            <label for="email" class="contactme_label">Your Email:</label><br>
+            <input type="email" name="yourEmail" value="" id="email" autocomplete="off"><br>
+            <label for="comment" class="contactme_label">Your Message:</label><br>
+            <textarea name="yourMessage" id="" cols="30" rows="10" id="comment" spellcheck="true"></textarea><br>
+            <button class="superbtn" href="#" role="button" data-bs-toggle="button" aria-pressed="true">Submit</button><br>
+        </form>
         </div>
         <div class="group-3">
             <div class="contact">
@@ -280,7 +290,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <footer></footer>
     <script>
         feather.replace()
     </script>
@@ -289,4 +300,5 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>
