@@ -200,14 +200,36 @@ ul, ol, li {
     display: block;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    margin-left: 8rem
 }
 .group-2 > a {
     margin-bottom: 2rem;
     margin-top: 2rem;
     height: 60px;
-    width: 15rem;
+    width: 25rem;
     text-align: center;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    -webkit-box-shadow: 2px 2px 15px #666666;
+    -moz-box-shadow: 2px 2px 15px #666666;
+    box-shadow: 2px 2px 15px #666666;
+    font-family: Georgia;
+    color: #e9e8e8;
+    font-size: 20px;
+    background: #ff7513;
+    padding: 10px 40px 20px 40px;
+    text-decoration: none;
 }
+.group-2 > a:hover {
+    background: #f89a57;
+    text-decoration: none;
+  }
+
+
+
+
+
 /*//////////////////////////////*/
 .profile_title {
     margin-top: 1rem;
