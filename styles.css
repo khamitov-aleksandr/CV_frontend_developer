@@ -9,6 +9,7 @@
     --ff-inter: Inter, sans-serif;
     /* Colors */
     --primary-color: #ff7613;
+    --primary-color--light: #f89a57;
     --text-color: #e9e8e8;
     --clr-dark: #081b3b;
 }
@@ -76,7 +77,7 @@ ul, ol, li {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    padding: 5rem;
+    padding: 8rem;
     background: var(--clr-dark);
     grid-template-columns: 1fr 1fr;
     gap: 10rem;
@@ -165,7 +166,11 @@ ul, ol, li {
 .profile_container {
     margin-top: 20px;
     display: flex;
-    gap: 4rem;
+    gap: 10rem;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
 }
 .profile_profileImg {
     max-width: 250px;
@@ -195,7 +200,13 @@ ul, ol, li {
     display: block;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    margin-left: 6rem;
+}
+.group-2 > a {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    height: 60px;
+    width: 15rem;
+    text-align: center;
 }
 /*//////////////////////////////*/
 .profile_title {
@@ -279,26 +290,6 @@ ul, ol, li {
 .social_item svg {
     width: 2rem;
 }
-hr {
-    grid-column: 1/-1;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-top: 0 solid rgba(128, 128, 128, 0.229);
-}
-@media only screen and (max-width:900px) {
-    hr {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-}
-@media only screen and (max-width:768px) {
-    hr {
-        margin: 0 auto;
-    }
-}
 
 
 
@@ -323,8 +314,6 @@ hr {
 :root {
     /** Colors */
     --clr-light: 0, 0%, 70%;
-
-    --clr-accent-light: 0, 65%, 60%;
 }
 /* A11Y - Remove all animations, transitions and smooth scroll for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
@@ -451,8 +440,8 @@ a:focus {
 }
 @media screen and (hover) {
     .link-external:hover {
-        transform: scale(1.05);
-        filter: brightness(120%) saturate(130%);
+        transform: scale(2.05);
+        filter: brightness(140%) saturate(160%);
     }
 }
 .link-external:active {
@@ -468,7 +457,7 @@ a:focus {
     width: 100%;
     top: 0;
     z-index: 100;
-    border-bottom: 2px solid hsl(var(--clr-light));
+    border-bottom: 2px solid var(--text-color);
 }
 #header[on-screen="initial"],
 #header[on-screen="partial"] {
@@ -723,7 +712,7 @@ label, input, textarea {
     color: rgb(0 0 0 / 70%);
 }
 
-.card button {
+.card a {
     border: 0;
     background: var(--clr-dark);
     color: var(--primary-color);
@@ -733,7 +722,7 @@ label, input, textarea {
     border-radius: 40px;
     margin: 1rem;
 }
-.card button:hover {
+.card a:hover {
     border: 0;
     background: var(--primary-color);
     color: var(--text-color);
