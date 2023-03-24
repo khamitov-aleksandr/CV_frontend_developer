@@ -33,7 +33,6 @@ function toggleNavMenu() {
         }
     }
 
-
     // Toggle header: partial - full
     if (header.getAttribute("on-screen") === "partial" || header.getAttribute("on-screen") === "initial") {
         header.setAttribute("on-screen", "full");
@@ -61,3 +60,16 @@ document.addEventListener("click", (e) => {
         }
     }
 })
+
+// Add active class to the current button (highlight it)
+var navlist = document.getElementById("nav__list");
+var btns = navlist.getElementsByClassName("nav__link");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
