@@ -30,268 +30,276 @@
     </div>
     <header id="header" on-screen="initial">
         <div class="container">
-            <nav id="nav">
-                <ul id="nav__list">
-                    <li><a href="#about" class="nav__link active">About</a></li>
-                    <li><a href="#projects" class="nav__link">Projects</a></li>
-                    <li><a href="#CV" class="nav__link">CV</a></li>
-                    <li><a href="#contact" class="nav__link">Contact me</a></li>
+            <nav id="navbar" class="navbar">
+                <ul id="nav__list" class="nav nav-pills">
+                    <li class="nav-item"><a href="#about" class="nav__link active">About</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav-item"><a href="#CV" class="nav__link">CV</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav__link">Contact me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="containers" id="about">
-        <div class="profile">
-            <div class="profile_container">
-                <div class="profile_profileImg">
-                    <img src="./images/profileImage1.png" alt="Aleksandr Khamitov" title="Aleksandr Khamitov">
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px"
+        data-bs-smooth-scroll="true" class="scrollspy" tabindex="0">
+        <section class="containers" id="about">
+            <div class="profile">
+                <div class="profile_container">
+                    <div class="profile_profileImg">
+                        <img src="./images/profileImage1.png" alt="Aleksandr Khamitov" title="Aleksandr Khamitov">
+                    </div>
+                    <div>
+                        <h1 class="profile_name">
+                            <span class="profile_name_firstName">Aleksandr</span>
+                            <span class="profile_name_lastName">Khamitov</span>
+                        </h1>
+                        <p class="profile_title">Frontend Developer</p>
+                        <p class="description">
+                            Hello everyone, I am <em>Aleksandr</em> and I am looking for a <strong>job</strong>.
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section class="project" id="projects">
+            <span class="project_title">PROJECTS</span>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/littlelemon.png" alt="Little Lemon Restaurant">
+                    <div>
+                        <h2 class="h2">Little Lemon restaurant</h2>
+                        <h3 class="h3">React.js, HTML, CSS, JS</h3>
+                        <p>A responsive React webpage for the "Little Lemon restaurant". You can see menu, write a
+                            feedback, login, book a table and read more about restaurant.</p>
+                        <a href="https://khamitov-aleksandr.github.io/littlelemon/" target="_blank"
+                            title="Visit Webpage">View</a>
+                        <a href="https://github.com/khamitov-aleksandr/littlelemon" target="_blank"
+                            title="Visit GiHub Repo">Visit GiHub</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/btngame.png" alt="Buttons game">
+                    <div>
+                        <h2 class="h2">Stroop Effect Game</h2>
+                        <h3 class="h3">HTML, CSS, JS</h3>
+                        <p>A button game with timer and points</p>
+                        <a type="button" href="https://khamitov-aleksandr.github.io/btngame/" target="_blank"
+                            title="Visit Webpage">View</a>
+                        <a type="button" href="https://github.com/khamitov-aleksandr/btngame" target="_blank"
+                            title="Visit GiHub Repo">Visit GiHub</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/drumkit.png" alt="Drum Kit">
+                    <div>
+                        <h2 class="h2">Drum Kit</h2>
+                        <h3 class="h3">HTML, CSS, JS</h3>
+                        <p>A website about musical instruments and sounds. Just try it and enjoy!</p>
+                        <a href="https://khamitov-aleksandr.github.io/drum/" target="_blank"
+                            title="Visit Webpage">View</a>
+                        <a href="https://github.com/khamitov-aleksandr/drum" target="_blank"
+                            title="Visit GiHub Repo">Visit
+                            GiHub</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/dice.png" alt="The Dice Game">
+                    <div>
+                        <h2 class="h2">The Dice Game</h2>
+                        <h3 class="h3">HTML, CSS, JS</h3>
+                        <p>A simple Dice Game. Do you enjoy gambling?</p>
+                        <a href="https://khamitov-aleksandr.github.io/dice/" target="_blank"
+                            title="Visit Webpage">View</a>
+                        <a href="https://github.com/khamitov-aleksandr/dice" target="_blank"
+                            title="Visit GiHub Repo">Visit
+                            GiHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resume" id="CV">
+            <div class="group-12">
+                <span class="CV_title">CV</span>
+                <a class="superbtn download" href="CV.pdf" target="_blank" download="Resume.pdf"
+                    title="Download CV after click">Download CV</a>
+            </div>
+            <div class="containers">
+                <div class="group-1">
+                    <div class="skills">
+                        <h3 class="title">Skills</h3>
+                        <ul class="skill_list description">
+                            <li>React JS</li>
+                            <li>JavaScript</li>
+                            <li>HTML & CSS</li>
+                            <li>Figma</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <h3 class="title">Languages</h3>
+                        <div class="languages_item">
+                            <h4 class="languages_name">Russian</h4>
+                            <p class="description">Native language</p>
+                        </div>
+                        <div class="languages_item">
+                            <h4 class="languages_name">English</h4>
+                            <p class="description">Advanced level</p>
+                        </div>
+                        <div class="languages_item">
+                            <h4 class="languages_name">Turkish</h4>
+                            <p class="description">Beginner level</p>
+                        </div>
+                        <div class="languages_item">
+                            <h4 class="languages_name">Dutch</h4>
+                            <p class="description">Beginner level</p>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h3 class="title">Education</h3>
+                        <div class="education_item">
+                            <p class="item_preTitle">
+                                2015-2017
+                            </p>
+                            <h4 class="item_title">M.S. Instrumentation</h4>
+                            <p class="item_subtitle">
+                                Ryazan State Radio Engineering University
+                            </p>
+                        </div>
+                        <div class="education_item">
+                            <p class="item_preTitle">
+                                2011-2015
+                            </p>
+                            <h4 class="item_title">B.S. Instrumentation</h4>
+                            <p class="item_subtitle">
+                                Ryazan State Radio Engineering University
+                            </p>
+                        </div>
+                    </div>
+                    <div class="certification">
+                        <h3 class="title">Certifications</h3>
+                        <div class="certification_item">
+                            <p class="item_preTitle">2023</p>
+                            <h4 class="item_title">Web Development</h4>
+                            <p class="description">Udemy cours: The Complite 2023 Web Development Bootcamp with Dr.
+                                Angela
+                                Yu
+                            </p>
+                        </div>
+                        <div class="certification_item">
+                            <p class="item_preTitle">2023</p>
+                            <h4 class="item_title">Front-End Developer</h4>
+                            <p class="description">Coursera: Meta Front-End Developer Professional Certificate</p>
+                        </div>
+                        <div class="certification_item">
+                            <p class="item_preTitle">2022</p>
+                            <h4 class="item_title">Web Development</h4>
+                            <p class="description">ITMO University Web Development certification</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-2">
+                    <div class="expirience">
+                        <h3 class="title">Expirience</h3>
+                        <div class="expirience_item">
+                            <p class="item_preTitle">2017 - 2023</p>
+                            <h4 class="item_title">RPTP Granit (Ryazan, RU - Ankara, TR)</h4>
+                            <p class="item_subtitle">Instrumentation and QA/QC electronic engineer</p>
+                            <ol class="description">
+                                <li> - Managed and supervised the work team.</li>
+                                <li> - Collaborated and communicated with foreign experts.</li>
+                                <li> - Provided technical support to 20+ users while ensuring proper maintenance of
+                                    workstations and servers.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="expirience_item">
+                        <p class="item_preTitle">2015 - 2017</p>
+                        <h4 class="item_title">Nika and Co, Ltd., Project Institute (Ryazan, RU)</h4>
+                        <p class="item_subtitle">Design engineer</p>
+                        <ol class="description">
+                            <li> - Designed residential buildings and non-residential premises with fire extinguishing
+                                systems,
+                                intercom, video surveillance, radio communication lines, building telephony lines.</li>
+                            <li> - Coordinated the equipment and their placement, as well as the parameters of the
+                                server
+                                room
+                                with the departments of other engineering networks and architects.</li>
+                            <li> - Used various programs for working with graphic objects.</li>
+                            <li> - Сonstructed communication lines to provide control over elevator shafts.</li>
+                        </ol>
+                    </div>
+                    <div class="hobby">
+                        <h3 class="title">
+                            Interests
+                        </h3>
+                        <div class="hobby_items">
+                            <div class="hobby_item">
+                                <i data-feather="book"></i>
+                                <span>Books</span>
+                            </div>
+                            <div class="hobby_item">
+                                <i data-feather="map"></i>
+                                <span>Traveling</span>
+                            </div>
+                            <div class="hobby_item">
+                                <i data-feather="music"></i>
+                                <span>Music</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactme" id="contact">
+            <div class="contactme_container">
                 <div>
-                    <h1 class="profile_name">
-                        <span class="profile_name_firstName">Aleksandr</span>
-                        <span class="profile_name_lastName">Khamitov</span>
+                    <h1 class="contactme_name">
+                        <span class="contactme_title">Contact Me</span>
                     </h1>
-                    <p class="profile_title">Frontend Developer</p>
                     <p class="description">
-                        Hello everyone, I am <em>Aleksandr</em> and I am looking for a <strong>job</strong>.
+                        Fill the form below 👇 and send me email.
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="project" id="projects">
-        <span class="project_title">PROJECTS</span>
-        <div class="cards">
-            <div class="card">
-                <img src="images/littlelemon.png" alt="Little Lemon Restaurant">
-                <div>
-                    <h2 class="h2">Little Lemon restaurant</h2>
-                    <h3 class="h3">React.js, HTML, CSS, JS</h3>
-                    <p>A responsive React webpage for the "Little Lemon restaurant". You can see menu, write a
-                        feedback, login, book a table and read more about restaurant.</p>
-                    <a href="https://khamitov-aleksandr.github.io/littlelemon/" target="_blank"
-                        title="Visit Webpage">View</a>
-                    <a href="https://github.com/khamitov-aleksandr/littlelemon" target="_blank"
-                        title="Visit GiHub Repo">Visit GiHub</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/btngame.png" alt="Buttons game">
-                <div>
-                    <h2 class="h2">Stroop Effect Game</h2>
-                    <h3 class="h3">HTML, CSS, JS</h3>
-                    <p>A button game with timer and points</p>
-                    <a type="button" href="https://khamitov-aleksandr.github.io/btngame/" target="_blank"
-                        title="Visit Webpage">View</a>
-                    <a type="button" href="https://github.com/khamitov-aleksandr/btngame" target="_blank"
-                        title="Visit GiHub Repo">Visit GiHub</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/drumkit.png" alt="Drum Kit">
-                <div>
-                    <h2 class="h2">Drum Kit</h2>
-                    <h3 class="h3">HTML, CSS, JS</h3>
-                    <p>A website about musical instruments and sounds. Just try it and enjoy!</p>
-                    <a href="https://khamitov-aleksandr.github.io/drum/" target="_blank" title="Visit Webpage">View</a>
-                    <a href="https://github.com/khamitov-aleksandr/drum" target="_blank" title="Visit GiHub Repo">Visit
-                        GiHub</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/dice.png" alt="The Dice Game">
-                <div>
-                    <h2 class="h2">The Dice Game</h2>
-                    <h3 class="h3">HTML, CSS, JS</h3>
-                    <p>A simple Dice Game. Do you enjoy gambling?</p>
-                    <a href="https://khamitov-aleksandr.github.io/dice/" target="_blank" title="Visit Webpage">View</a>
-                    <a href="https://github.com/khamitov-aleksandr/dice" target="_blank" title="Visit GiHub Repo">Visit
-                        GiHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="resume" id="CV">
-        <div class="group-12">
-            <span class="CV_title">CV</span>
-            <a class="superbtn download" href="CV.pdf" target="_blank" download="Resume.pdf"
-                title="Download CV after click">Download CV</a>
-        </div>
-        <div class="containers">
-            <div class="group-1">
-                <div class="skills">
-                    <h3 class="title">Skills</h3>
-                    <ul class="skill_list description">
-                        <li>React JS</li>
-                        <li>JavaScript</li>
-                        <li>HTML & CSS</li>
-                        <li>Figma</li>
-                        <li>Git & GitHub</li>
-                    </ul>
-                </div>
-                <div class="languages">
-                    <h3 class="title">Languages</h3>
-                    <div class="languages_item">
-                        <h4 class="languages_name">Russian</h4>
-                        <p class="description">Native language</p>
-                    </div>
-                    <div class="languages_item">
-                        <h4 class="languages_name">English</h4>
-                        <p class="description">Advanced level</p>
-                    </div>
-                    <div class="languages_item">
-                        <h4 class="languages_name">Turkish</h4>
-                        <p class="description">Beginner level</p>
-                    </div>
-                    <div class="languages_item">
-                        <h4 class="languages_name">Dutch</h4>
-                        <p class="description">Beginner level</p>
+            <form class="contactmeform" action="https://formsubmit.co/el/liyedu" method="POST" enctype="text/plain">
+                <label for="name" class="contactme_label">Name:</label>
+                <input type="text" required name="name" value="" id="name" autocomplete="off"><br>
+                <label for="email" class="contactme_label">Email:</label>
+                <input type="email" required name="email" value="" id="email" autocomplete="off"><br>
+                <label for="comment" class="contactme_label">Message:</label>
+                <textarea name="yourMessage" id="" cols="30" rows="10" id="comment" spellcheck="true"></textarea><br>
+                <button type="submit" target="_blank" class="superbtn">Submit</button><br>
+            </form>
+            <div class="group-3">
+                <div class="contact">
+                    <h3 class="title">Contact</h3>
+                    <div class="contact_info">
+                        <p class="description">Amsterdam, Netherlands</p>
+                        <p class="description">+310627436230</p>
+                        <p class="description">khamitov.aleksandr@gmail.com</p>
+                        <p class="description">https://github.com/khamitov-aleksandr</p>
                     </div>
                 </div>
-                <div class="education">
-                    <h3 class="title">Education</h3>
-                    <div class="education_item">
-                        <p class="item_preTitle">
-                            2015-2017
-                        </p>
-                        <h4 class="item_title">M.S. Instrumentation</h4>
-                        <p class="item_subtitle">
-                            Ryazan State Radio Engineering University
-                        </p>
-                    </div>
-                    <div class="education_item">
-                        <p class="item_preTitle">
-                            2011-2015
-                        </p>
-                        <h4 class="item_title">B.S. Instrumentation</h4>
-                        <p class="item_subtitle">
-                            Ryazan State Radio Engineering University
-                        </p>
-                    </div>
-                </div>
-                <div class="certification">
-                    <h3 class="title">Certifications</h3>
-                    <div class="certification_item">
-                        <p class="item_preTitle">2023</p>
-                        <h4 class="item_title">Web Development</h4>
-                        <p class="description">Udemy cours: The Complite 2023 Web Development Bootcamp with Dr. Angela
-                            Yu
-                        </p>
-                    </div>
-                    <div class="certification_item">
-                        <p class="item_preTitle">2023</p>
-                        <h4 class="item_title">Front-End Developer</h4>
-                        <p class="description">Coursera: Meta Front-End Developer Professional Certificate</p>
-                    </div>
-                    <div class="certification_item">
-                        <p class="item_preTitle">2022</p>
-                        <h4 class="item_title">Web Development</h4>
-                        <p class="description">ITMO University Web Development certification</p>
+                <div class="socials">
+                    <h3 class="title">Socials</h3>
+                    <div class="social_items">
+                        <a href="https://github.com/khamitov-aleksandr" target="_blank" class="social_item">
+                            <i data-feather="github"></i>
+                            <span>/khamitov-aleksandr</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aleksandrkhamitov/" target="_blank" class="social_item">
+                            <i data-feather="linkedin"></i>
+                            <span>/aleksandrkhamitov</span>
+                        </a>
+                        <a href="https://www.instagram.com/alexkhamitov" target="_blank" class="social_item">
+                            <i data-feather="instagram"></i>
+                            <span>/alexkhamitov</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="group-2">
-                <div class="expirience">
-                    <h3 class="title">Expirience</h3>
-                    <div class="expirience_item">
-                        <p class="item_preTitle">2017 - 2023</p>
-                        <h4 class="item_title">RPTP Granit (Ryazan, RU - Ankara, TR)</h4>
-                        <p class="item_subtitle">Instrumentation and QA/QC electronic engineer</p>
-                        <ol class="description">
-                            <li> - Managed and supervised the work team.</li>
-                            <li> - Collaborated and communicated with foreign experts.</li>
-                            <li> - Provided technical support to 20+ users while ensuring proper maintenance of
-                                workstations and servers.</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="expirience_item">
-                    <p class="item_preTitle">2015 - 2017</p>
-                    <h4 class="item_title">Nika and Co, Ltd., Project Institute (Ryazan, RU)</h4>
-                    <p class="item_subtitle">Design engineer</p>
-                    <ol class="description">
-                        <li> - Designed residential buildings and non-residential premises with fire extinguishing
-                            systems,
-                            intercom, video surveillance, radio communication lines, building telephony lines.</li>
-                        <li> - Coordinated the equipment and their placement, as well as the parameters of the server
-                            room
-                            with the departments of other engineering networks and architects.</li>
-                        <li> - Used various programs for working with graphic objects.</li>
-                        <li> - Сonstructed communication lines to provide control over elevator shafts.</li>
-                    </ol>
-                </div>
-                <div class="hobby">
-                    <h3 class="title">
-                        Interests
-                    </h3>
-                    <div class="hobby_items">
-                        <div class="hobby_item">
-                            <i data-feather="book"></i>
-                            <span>Books</span>
-                        </div>
-                        <div class="hobby_item">
-                            <i data-feather="map"></i>
-                            <span>Traveling</span>
-                        </div>
-                        <div class="hobby_item">
-                            <i data-feather="music"></i>
-                            <span>Music</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contactme" id="contact">
-        <div class="contactme_container">
-            <div>
-                <h1 class="contactme_name">
-                    <span class="contactme_title">Contact Me</span>
-                </h1>
-                <p class="description">
-                    Fill the form below 👇 and send me email.
-                </p>
-            </div>
-        </div>
-        <form class="contactmeform" action="https://formsubmit.co/el/liyedu" method="POST" enctype="text/plain">
-            <label for="name" class="contactme_label">Name:</label>
-            <input type="text" required name="name" value="" id="name" autocomplete="off"><br>
-            <label for="email" class="contactme_label">Email:</label>
-            <input type="email" required name="email" value="" id="email" autocomplete="off"><br>
-            <label for="comment" class="contactme_label">Message:</label>
-            <textarea name="yourMessage" id="" cols="30" rows="10" id="comment" spellcheck="true"></textarea><br>
-            <button type="submit" target="_blank" class="superbtn">Submit</button><br>
-        </form>
-        </div>
-        <div class="group-3">
-            <div class="contact">
-                <h3 class="title">Contact</h3>
-                <div class="contact_info">
-                    <p class="description">Amsterdam, Netherlands</p>
-                    <p class="description">+310627436230</p>
-                    <p class="description">khamitov.aleksandr@gmail.com</p>
-                    <p class="description">https://github.com/khamitov-aleksandr</p>
-                </div>
-            </div>
-            <div class="socials">
-                <h3 class="title">Socials</h3>
-                <div class="social_items">
-                    <a href="https://github.com/khamitov-aleksandr" target="_blank" class="social_item">
-                        <i data-feather="github"></i>
-                        <span>/khamitov-aleksandr</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/aleksandrkhamitov/" target="_blank" class="social_item">
-                        <i data-feather="linkedin"></i>
-                        <span>/aleksandrkhamitov</span>
-                    </a>
-                    <a href="https://www.instagram.com/alexkhamitov" target="_blank" class="social_item">
-                        <i data-feather="instagram"></i>
-                        <span>/alexkhamitov</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer>
         <!-- Copyright -->
         <div class="text-center p-3">

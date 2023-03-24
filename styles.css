@@ -28,6 +28,9 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+    height: auto;
 }
 /* Common Styles */
 img,
@@ -251,7 +254,6 @@ ul, ol, li {
 .nav__link {
     font-family: var(--ff-inter);
     font-size: clamp(1.2rem, 1rem + 0.6vw, 1.5rem);
-    color: var(--text-color);
 }
 .container {
     width: min(100%, 1800px);
@@ -265,7 +267,6 @@ a {
     font-weight: 500;
 }
 a:focus {
-    border-bottom: 1px solid var(--primary-color--light);
     outline: transparent;
 }
 /* Nav links */
@@ -452,6 +453,7 @@ label, input, textarea {
     display: block;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    text-align: center;
 }
 .contactme_label {
     font-size: 1.5rem;
