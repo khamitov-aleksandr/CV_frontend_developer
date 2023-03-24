@@ -1,3 +1,6 @@
+// Get the current year
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 // ELEMENTS
 const header = document.getElementById("header");
 const btnNavToggle = document.getElementById("nav-toggle");
