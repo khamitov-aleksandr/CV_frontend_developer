@@ -42,7 +42,7 @@
     </header>
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px" data-bs-smooth-scroll="true"
         class="scrollspy" tabindex="0">
-        <section class="containers" id="about">
+        <section class="containers_first" id="about">
             <div class="profile">
                 <div class="profile_container">
                     <div class="profile_profileImg">
@@ -62,14 +62,14 @@
             </div>
         </section>
         <section class="project" id="projects">
-            <span class="project_title">PROJECTS</span>
+            <span class="project_title"><b>PROJECTS</b></span>
             <div class="cards">
                 <div class="card">
                     <img src="images/littlelemon.png" alt="Little Lemon Restaurant">
                     <div>
                         <h2 class="h2">Little Lemon restaurant</h2>
-                        <h3 class="h3">React.js, HTML, CSS, JS</h3>
-                        <p>A responsive React webpage for the "Little Lemon restaurant"</p>
+                        <h3 class="h3"><i>React.js, HTML, CSS, JS</i></h3>
+                        <p>A responsive React webpage</p>
                         <a href="https://khamitov-aleksandr.github.io/littlelemon/" target="_blank"
                             title="Visit Webpage">View</a>
                         <a href="https://github.com/khamitov-aleksandr/littlelemon" target="_blank"
@@ -80,7 +80,7 @@
                     <img src="images/btngame.png" alt="Buttons game">
                     <div>
                         <h2 class="h2">Stroop Effect Game</h2>
-                        <h3 class="h3">HTML, CSS, JS</h3>
+                        <h3 class="h3"><i>HTML, CSS, JS</i></h3>
                         <p>A button game with timer and points</p>
                         <a type="button" href="https://khamitov-aleksandr.github.io/btngame/" target="_blank"
                             title="Visit Webpage">View</a>
@@ -92,8 +92,8 @@
                     <img src="images/drumkit.png" alt="Drum Kit">
                     <div>
                         <h2 class="h2">Drum Kit</h2>
-                        <h3 class="h3">HTML, CSS, JS</h3>
-                        <p>A website about musical instruments and sounds. Just try it and enjoy!</p>
+                        <h3 class="h3"><i>HTML, CSS, JS</i></h3>
+                        <p>A website about musical instruments and sounds.</p>
                         <a href="https://khamitov-aleksandr.github.io/drum/" target="_blank"
                             title="Visit Webpage">View</a>
                         <a href="https://github.com/khamitov-aleksandr/drum" target="_blank"
@@ -105,7 +105,7 @@
                     <img src="images/dice.png" alt="The Dice Game">
                     <div>
                         <h2 class="h2">The Dice Game</h2>
-                        <h3 class="h3">HTML, CSS, JS</h3>
+                        <h3 class="h3"><i>HTML, CSS, JS</i></h3>
                         <p>A simple Dice Game. Do you enjoy gambling?</p>
                         <a href="https://khamitov-aleksandr.github.io/dice/" target="_blank"
                             title="Visit Webpage">View</a>
@@ -118,7 +118,7 @@
         </section>
         <section class="resume" id="CV">
             <div class="group-12">
-                <span class="CV_title">CV</span>
+                <span class="CV_title"><b>CV</b></span>
                 <a class="superbtn download" href="CV.pdf" target="_blank" download="Resume.pdf"
                     title="Download CV after click">Download CV</a>
             </div>
@@ -253,7 +253,7 @@
             <div class="contactme_container">
                 <div>
                     <h1 class="contactme_name">
-                        <span class="contactme_title">Contact Me</span>
+                        <span class="contactme_title"><b>Contact Me</b></span>
                     </h1>
                     <p class="description">
                         Fill out the form below 👇 and send me an <em>email</em>
@@ -261,44 +261,31 @@
                 </div>
             </div>
             <form class="contactmeform" action="https://formsubmit.co/31bbfad7d00585a33cd7de3d39579991" method="POST"
-                enctype="text/plain" target="_blank">
+                target="_blank">
                 <label for="name" class="contactme_label">Name:</label>
-                <input type="text" name="Name" value="" id="name" required><br>
+                <input type="text" name="Name" id="name" required>
                 <label for="email" class="contactme_label">Email:</label>
-                <input type="email" name="Email" value="" id="email" autocomplete="off" required><br>
+                <input type="email" name="Email" id="email" autocomplete="off" required>
                 <label for="comment" class="contactme_label">Message:</label>
                 <textarea name="Message" id="" cols="30" rows="10" id="comment" spellcheck="true"></textarea><br>
                 <button type="submit" class="superbtn">Submit</button><br>
             </form>
             <div class="group-3">
-                <div class="contact">
-                    <h3 class="title">Contact</h3>
-                    <div class="contact_info">
-                        <p class="description">Amsterdam, Netherlands</p>
-                        <p class="description">+310627436230</p>
-                        <p class="description">khamitov.aleksandr@gmail.com</p>
-                        <p class="description">https://github.com/khamitov-aleksandr</p>
-                    </div>
-                </div>
-                <div class="socials">
-                    <h3 class="title">Socials</h3>
-                    <div class="social_items">
-                        <a href="https://github.com/khamitov-aleksandr" target="_blank" class="social_item">
-                            <i data-feather="github"></i>
-                            <span>/khamitov-aleksandr</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/aleksandrkhamitov/" target="_blank" class="social_item">
-                            <i data-feather="linkedin"></i>
-                            <span>/aleksandrkhamitov</span>
-                        </a>
-                        <a href="https://www.instagram.com/alexkhamitov" target="_blank" class="social_item">
-                            <i data-feather="instagram"></i>
-                            <span>/alexkhamitov</span>
-                        </a>
-                    </div>
-                </div>
+                <a href="https://github.com/khamitov-aleksandr" target="_blank" class="social_item">
+                    <i data-feather="github"></i>
+                    <span>khamitov-aleksandr</span>
+                </a>
+                <a href="https://www.linkedin.com/in/aleksandrkhamitov/" target="_blank" class="social_item">
+                    <i data-feather="linkedin"></i>
+                    <span>aleksandrkhamitov</span>
+                </a>
+                <a href="https://www.instagram.com/alexkhamitov" target="_blank" class="social_item">
+                    <i data-feather="instagram"></i>
+                    <span>alexkhamitov</span>
+                </a>
             </div>
-        </section>
+    </div>
+    </section>
     </div>
     <footer>
         <!-- Copyright -->
